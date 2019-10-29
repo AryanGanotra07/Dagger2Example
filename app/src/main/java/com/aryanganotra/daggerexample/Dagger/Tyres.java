@@ -1,4 +1,4 @@
-package com.aryanganotra.daggerexample;
+package com.aryanganotra.daggerexample.Dagger;
 
 import android.util.Log;
 

@@ -1,6 +1,4 @@
-package com.aryanganotra.daggerexample;
-
-import javax.inject.Inject;
+package com.aryanganotra.daggerexample.Dagger;
 
 public class Wheels {
 
