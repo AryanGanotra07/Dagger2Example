@@ -1,5 +1,6 @@
 package com.aryanganotra.daggerexample.Dagger;
 
+import com.aryanganotra.daggerexample.Car.Car;
 import com.aryanganotra.daggerexample.MainActivity;
 
 import dagger.Component;

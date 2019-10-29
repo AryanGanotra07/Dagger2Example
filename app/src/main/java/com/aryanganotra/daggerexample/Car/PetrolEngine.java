@@ -1,4 +1,4 @@
-package com.aryanganotra.daggerexample.Dagger;
+package com.aryanganotra.daggerexample.Car;
 
 import android.util.Log;
 
@@ -7,11 +7,12 @@ import javax.inject.Inject;
 public class PetrolEngine implements Engine {
 
     private static final String TAG = "Car";
+    int horsePower;
 
     @Inject
-    public PetrolEngine()
+    public PetrolEngine(int horsePower)
     {
-
+        this.horsePower = horsePower;
     }
 
     @Override

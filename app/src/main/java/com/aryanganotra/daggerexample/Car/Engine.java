@@ -1,4 +1,4 @@
-package com.aryanganotra.daggerexample.Dagger;
+package com.aryanganotra.daggerexample.Car;
 
 import javax.inject.Inject;
 

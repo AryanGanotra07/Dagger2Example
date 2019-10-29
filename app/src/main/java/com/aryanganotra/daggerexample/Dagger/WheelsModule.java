@@ -1,5 +1,9 @@
 package com.aryanganotra.daggerexample.Dagger;
 
+import com.aryanganotra.daggerexample.Car.Rims;
+import com.aryanganotra.daggerexample.Car.Tyres;
+import com.aryanganotra.daggerexample.Car.Wheels;
+
 import dagger.Module;
 import dagger.Provides;
 

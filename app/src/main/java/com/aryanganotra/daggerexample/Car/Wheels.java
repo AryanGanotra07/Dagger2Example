@@ -1,4 +1,4 @@
-package com.aryanganotra.daggerexample.Dagger;
+package com.aryanganotra.daggerexample.Car;
 
 public class Wheels {
 
@@ -6,7 +6,7 @@ public class Wheels {
     private Tyres tyres;
 
 
-    Wheels(Rims rims, Tyres tyres){
+   public Wheels(Rims rims, Tyres tyres){
         this.rims = rims;
         this.tyres = tyres;
     }
