@@ -4,14 +4,13 @@ import com.aryanganotra.daggerexample.Car.Car;
 import com.aryanganotra.daggerexample.MainActivity;
 
 import javax.inject.Named;
-import javax.inject.Singleton;
 
 import dagger.BindsInstance;
 import dagger.Component;
 
-@Singleton
-@Component(modules = {WheelsModule.class, PetrolEngineModule.class})
-public interface CarComponent {
+@PerActivity
+@Component(dependencies = AppComponent.class,modules = {WheelsModule.class, PetrolEngineModule.class})
+public interface ActivityComponent {
 
     Car getCar();
 
@@ -25,6 +24,8 @@ public interface CarComponent {
         @BindsInstance
         Builder engineCapacity(@Named("engine")int engineCapacity);
 
-      CarComponent build();
+        Builder appComponent(AppComponent appComponent);
+
+      ActivityComponent build();
     }
 }
