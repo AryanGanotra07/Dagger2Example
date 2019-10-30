@@ -17,16 +17,22 @@ public interface ActivityComponent {
 
     void inject(MainActivity activity);
 
-    @Subcomponent.Builder
-    interface Builder {
-        @BindsInstance
-        Builder horsePower(@Named("power") int horsePower);
-
-        @BindsInstance
-        Builder engineCapacity(@Named("engine")int engineCapacity);
+//    @Subcomponent.Builder
+//    interface Builder {
+//        @BindsInstance
+//        Builder horsePower(@Named("power") int horsePower);
 //
-//        Builder appComponent(AppComponent appComponent);
+//        @BindsInstance
+//        Builder engineCapacity(@Named("engine")int engineCapacity);
+////
+////        Builder appComponent(AppComponent appComponent);
+//
+//      ActivityComponent build();
+//    }
 
-      ActivityComponent build();
+    @Subcomponent.Factory
+    interface Factory {
+        ActivityComponent create(@BindsInstance @Named("power") int horsePower, @BindsInstance @Named("engine")int engineCapacity );
+
     }
 }

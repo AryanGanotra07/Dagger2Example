@@ -11,5 +11,10 @@ import dagger.Component;
 public interface AppComponent {
 
 
-   ActivityComponent.Builder getActivityComponentBuider();
+   ActivityComponent.Factory getActivityComponentFactory();
+
+   @Component.Factory
+   interface Factory {
+      AppComponent create(DriverModule driverModule);
+   }
 }
