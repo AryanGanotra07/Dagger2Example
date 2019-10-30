@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 //        ActivityComponent component = DaggerActivityComponent.builder().appComponent(((ExampleApp)getApplication()).getComponent()).engineCapacity(100).horsePower(100).build();
 //        component.getCar().drive();
 
-        ActivityComponent component = ((ExampleApp)getApplication()).getComponent().getActivityComponent(new DieselEngineModule(100));
+        ActivityComponent component = ((ExampleApp)getApplication()).getComponent().getActivityComponentBuider().horsePower(100).engineCapacity(100).build();
         component.getCar().drive();
 
 

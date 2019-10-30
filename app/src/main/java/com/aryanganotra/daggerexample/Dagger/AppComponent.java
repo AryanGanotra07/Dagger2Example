@@ -11,5 +11,5 @@ import dagger.Component;
 public interface AppComponent {
 
 
-   ActivityComponent getActivityComponent(DieselEngineModule dieselEngineModule);
+   ActivityComponent.Builder getActivityComponentBuider();
 }
