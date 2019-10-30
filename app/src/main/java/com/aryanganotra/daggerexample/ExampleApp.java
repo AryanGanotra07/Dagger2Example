@@ -4,7 +4,6 @@ import android.app.Application;
 
 import com.aryanganotra.daggerexample.Dagger.ActivityComponent;
 import com.aryanganotra.daggerexample.Dagger.AppComponent;
-import com.aryanganotra.daggerexample.Dagger.DaggerActivityComponent;
 import com.aryanganotra.daggerexample.Dagger.DaggerAppComponent;
 
 public class ExampleApp extends Application {
